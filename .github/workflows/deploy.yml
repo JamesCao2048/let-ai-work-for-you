@@ -24,10 +24,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '16'
 
       - name: Install honkit
-        run: npm install honkit --save-dev
+        run: npm install honkit@4.0.7 --save-dev
 
       - name: Build book
         run: npx honkit build
