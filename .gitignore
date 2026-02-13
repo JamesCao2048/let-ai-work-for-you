@@ -24,9 +24,7 @@ Thumbs.db
 **/*-secret.*
 
 # 2. 原始素材与版权文件（只上传链接/笔记，不上传原件）
-resources/references/*.pdf
-resources/references/*.epub
-resources/references/*.mobi
+resources/references/
 resources/assets/raw/
 
 # 3. 写作草稿（尚未准备好公开的内容）
