@@ -26,11 +26,10 @@ jobs:
         with:
           node-version: '16'
 
-      - name: Install honkit
-        run: npm install honkit@4.0.7 --save-dev
-
-      - name: Build book
-        run: npx honkit build
+      - name: Install and build
+        run: |
+          npm install honkit@3.7.16 --save-dev
+          npx honkit build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
