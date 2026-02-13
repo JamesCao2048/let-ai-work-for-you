@@ -1,0 +1,20 @@
+{
+    "title": "让AI替你忙",
+    "description": "一个AI研究者，用亲身实践告诉你：AI时代的效率游戏规则已经变了。",
+    "author": "James Cao",
+    "language": "zh-hans",
+    "gitbook": ">=3.0.0",
+    "plugins": [
+        "-sharing",
+        "expandable-chapters-small",
+        "theme-lou",
+        "back-to-top-button",
+        "anchors"
+    ],
+    "pluginsConfig": {
+        "theme-lou": {
+            "color": "#2563eb",
+            "favicon": "assets/favicon.ico"
+        }
+    }
+}
