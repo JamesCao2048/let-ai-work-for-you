@@ -1,0 +1,27 @@
+# .bookignore - 控制 GitBook 构建时忽略的文件
+# 这些文件会保留在 GitHub 仓库中，但不会编入电子书
+
+# Git 相关
+.git
+.github
+.gitignore
+.bookignore
+
+# 项目配置与文档
+CLAUDE.md
+LICENSE
+package.json
+package-lock.json
+
+# 辅助资源目录（仅供仓库使用，不编入书籍）
+resources/
+scripts/
+
+# 构建产物
+node_modules
+_book
+
+# 编辑器配置
+.vscode
+.idea
+.DS_Store

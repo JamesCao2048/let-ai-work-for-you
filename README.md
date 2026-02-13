@@ -3,12 +3,13 @@
 > 一个AI研究者，用亲身实践告诉你：AI时代的效率游戏规则已经变了。
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![GitBook](https://img.shields.io/badge/GitBook-阅读在线版-blue)](https://jamescao2048.github.io/let-ai-work-for-you/)
 
 ## 为什么写这本书？
 
 2025年底的一个深夜，我在用 Claude Code 搭建一个自动化工作流。从想法到可运行的代码，只花了20分钟。
 
-而就在半年前，同样的事情需要我花两天。
+而就在半年前,同样的事情需要我花两天。
 
 这不是10%的提升，是**100倍**的效率变化。
 
@@ -44,13 +45,88 @@
 | 😰 "AI焦虑症" | Ch2 → Ch10 → Ch12 |
 | 🚀 "想搭建效率系统" | 全书顺序阅读 |
 
+## 📁 项目结构
+
+```
+/let-ai-work-for-you
+├── .bookignore              # GitBook 构建忽略配置
+├── .github/                 # GitHub Actions（自动部署 GitBook）
+├── CLAUDE.md               # 🤖 AI 协作配置（写作风格、指令模板）
+├── LICENSE                 # 双重授权（书籍+代码）
+├── README.md               # 本文件
+├── SUMMARY.md              # 书籍目录
+├── book.json               # GitBook 配置
+│
+├── chapters/               # 📖 书籍正文源码
+│   ├── preface.md
+│   ├── ch00-when-efficiency-100x.md
+│   ├── part1/              # Part 1: 道
+│   ├── part2/              # Part 2: 术（🔒 部分章节仅完整版）
+│   └── part3/              # Part 3: 器
+│
+├── appendix/               # 📎 附录
+│   ├── tools.md            # AI 工具速查表
+│   └── exercises.md        # 每章小练习汇总
+│
+├── resources/              # 🗂️ 辅助资源（不编入 GitBook）
+│   ├── READING_LIST.md     # 参考文献与阅读笔记
+│   ├── prompts/            # 书中 Prompt 完整示例库
+│   ├── references/         # 参考文章链接（不上传PDF原文）
+│   └── drafts/             # 写作草稿
+│
+└── scripts/                # 🔧 辅助脚本（格式化、部署等）
+```
+
+### 关于 `resources/` 目录
+
+这个目录**不会编入电子书**，但会保留在 GitHub 仓库中，包含：
+
+- **`READING_LIST.md`**：创作过程中参考的文章、书籍清单（仅链接和笔记，不上传原文）
+- **`prompts/`**：书中用到的完整 Prompt 示例，可直接复制使用
+- **`references/`**：参考文献的阅读笔记
+- **`drafts/`**：未完成的章节灵感
+
+## 🤝 协作与贡献
+
+### 报告错别字 / 内容建议
+
+如果您发现书中有错别字、表述不清或有建议，欢迎：
+1. 提交 [GitHub Issue](https://github.com/JamesCao2048/let-ai-work-for-you/issues)
+2. 或直接提交 Pull Request 修正
+
+### 分享您的 Prompt
+
+如果您基于本书创造了有效的 Prompt，欢迎：
+1. Fork 本仓库
+2. 在 `resources/prompts/community/` 添加您的 Prompt
+3. 提交 Pull Request
+
+### AI 协作指南
+
+本书是**与 AI 协作创作**的。如果您想了解我是如何与 AI 协作写作的，请查看 [`CLAUDE.md`](CLAUDE.md)。
+
+这个文件定义了：
+- 书籍的语言风格（"去AI腔"规则）
+- 内容创作指令模板
+- 术语规范
+
+如果您也在创作类似内容，可以参考这个配置文件。
+
 ## 关于作者
 
-AI 研究者 / 效率实践者。相信效率的终极目的不是做更多，而是活更好。
+James, AI 研究者 / 效率实践者，十年软件研发经验，AI领域博士学位。相信效率的终极目的不是做更多，而是活更好。
 
 - 公众号：（即将开通）
 
-## License
+## 📄 License
 
-本作品采用 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) 许可协议。
-你可以自由阅读和分享，但不可用于商业用途。
+- **书籍内容**（`chapters/`、`appendix/`）：[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+  - 您可以自由阅读和分享，但不可用于商业用途
+- **代码与配置**（`resources/`、`scripts/`、`CLAUDE.md`）：MIT License
+  - 您可以自由使用、修改和分发
+
+详见 [`LICENSE`](LICENSE) 文件。
+
+---
+
+**⭐ 如果这本书对您有帮助，请点个 Star！**

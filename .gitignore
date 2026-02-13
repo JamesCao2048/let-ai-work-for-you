@@ -11,3 +11,31 @@ Thumbs.db
 # Editor
 .vscode/
 .idea/
+
+# ==========================================
+# 敏感配置与私有资源保护
+# ==========================================
+
+# 1. 敏感配置与密钥（绝对不能上传）
+.env
+.env.local
+.env.*.local
+**/private-config.json
+**/*-secret.*
+
+# 2. 原始素材与版权文件（只上传链接/笔记，不上传原件）
+resources/references/*.pdf
+resources/references/*.epub
+resources/references/*.mobi
+resources/assets/raw/
+
+# 3. 写作草稿（尚未准备好公开的内容）
+briefs/
+drafts/
+**/wip-*.md
+**/*-draft.md
+
+# 4. 个人笔记（如果是混在项目里的私人备忘）
+private/
+notes/
+**/personal-*.md
